@@ -1,0 +1,15 @@
+---
+# tasks file for conf
+
+- name: Instalando servidores web apache, php e mariadb no Debian
+  include: installdeb.yaml
+  when: ansible_os_family == "Debian"
+
+- name: Instalando servidores web apache, php e mariadb no RedHat / CentOs
+  include: installredhat.yaml
+  when: ansible_os_family == "RedHat"
+
+- name: Criando arquivo index.html
+  include: index.yaml
+  
+     

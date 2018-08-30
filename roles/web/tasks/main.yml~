@@ -1,0 +1,16 @@
+---
+# tasks file for conf
+
+
+#- name: Instalando servidores web apache, php e mariadb no RedHat / CentOs
+#  include: installrh.yaml
+
+#- name: Instalando servidores web apache, php e mariadb no Debian
+#  include: installdeb.yaml
+
+- name: Criando arquivo index.html
+  include: index.yaml
+  
+
+
+     

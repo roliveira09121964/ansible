@@ -1,0 +1,12 @@
+- name: instalando lamp no RH / CentOs
+  package:
+   name: 
+    - httpd
+    - php
+    - mariadb-server
+   state: present
+   update_cache: yes
+  notify:
+   - configurando firewalld
+   
+      

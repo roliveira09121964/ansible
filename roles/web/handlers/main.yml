@@ -1,0 +1,8 @@
+---
+# handlers file for web
+
+- name: configurando firewalld
+  service:
+   name: firewalld
+   state: stopped
+   

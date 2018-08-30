@@ -1,0 +1,5 @@
+- name: instalando o lamp
+  hosts: all
+  roles:
+   - web
+   

@@ -1,0 +1,10 @@
+- name: instalando lamp no RH / CentOs
+  package:
+   name: 
+    - puppetserver
+   state: present
+   update_cache: yes
+  notify:
+   - configurando firewalld
+   
+      

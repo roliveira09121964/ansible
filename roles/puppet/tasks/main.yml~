@@ -1,0 +1,9 @@
+---
+# tasks file for conf
+
+- name: Instalando repo puppet
+  include: installrepo.yaml
+
+- name: Instalando puppet
+  include: installpuppet.yaml
+
